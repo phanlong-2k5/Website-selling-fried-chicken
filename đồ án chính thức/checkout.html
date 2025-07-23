@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Huy Long Chicken</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="https://png.pngtree.com/png-vector/20201103/ourmid/pngtree-cool-funny-chicken-mascot-design-suitable-for-restaurant-logo-or-packaging-png-image_2386471.jpg" >
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="menu.html" class="active">THỰC ĐƠN</a></li>
+                    <li><a href="login.html">ĐĂNG NHẬP</a></li>
+        <li><a href="register.html">ĐĂNG KÝ</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <section class="page-title-section">
+        <div class="container">
+            <h1 class="page-title">THANH TOÁN</h1>
+        </div>
+    </section>
+
+    <section class="checkout-section">
+    <div class="container">
+        <div class="cart-summary">
+            <h3>Tóm tắt đơn hàng</h3>
+            <ul class="cart-items"></ul>
+            <p class="total-price">Tổng tiền: <span>0₫</span></p>
+        </div>
+        <div class="checkout-form">
+            <h3>Thông tin thanh toán</h3>
+            <form id="checkout-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Họ và Tên:</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" pattern="[0-9]{10}" title="Số điện thoại phải có 10 chữ số" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ giao hàng:</label>
+                    <textarea id="address" name="address" placeholder="Nhập địa chỉ giao hàng" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <a href="menu.html" class="continue-shopping-btn">Tiếp tục mua sắm</a>
+                    <button type="submit" class="complete-order-btn">Hoàn tất đơn hàng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col contact-info">
+                    <h3> Huy Long Chicken</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 202 Lý Chính Thắng, Phường 09, Quận 3, TP. Hồ Chí Minh</p>
+                    <p><i class="fas fa-phone"></i> (028) 393 11 039</p>
+                    <p><i class="fas fa-envelope"></i> info.Huy Long Chicken@fb.mesa.vn</p>
+                    <p><i class="fas fa-globe"></i> www.Huy Long Chicken.com</p>
+                </div>
+                
+                <div class="footer-col connect-social">
+                    <h3>Kết Nối Với Huy Long Chicken</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col newsletter">
+                    <h3>Đăng ký nhận thông tin ưu đãi</h3>
+                    <form action="#" method="POST">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">GỬI</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
