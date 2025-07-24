@@ -1,3 +1,4 @@
+// Core authentication logic by Ho Nguyen Duc Huy
 document.addEventListener('DOMContentLoaded', function() {
     // Xử lý giỏ hàng
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
